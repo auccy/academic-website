@@ -11,12 +11,12 @@
 }
 
 pre{
-    white-space: pre-wrap;  
-    white-space: -moz-pre-wrap; 
-    white-space: -pre-wrap; 
-    white-space: -o-pre-wrap; 
-    word-wrap: break-word; 
-    width:100%; 
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    width:100%;
     overflow-x:auto;
 }
 </style>
@@ -71,11 +71,7 @@ pre{
 {% endif %}
 
 <div id="bib{{entry.key}}" style="display: none; background-color:black; border-radius:5px; padding:10px; margin-top:10px; margin-bottom:20px;">
-{% if entry.abstract %}
-<pre>{{ entry.bibtex | remove: "abstract = {" | remove: entry.abstract | remove: "}," }}</pre>
-{% else %}
 <pre>{{ entry.bibtex }}</pre>
-{% endif %}
 </div>
 
 {% if entry.abstract %}
